@@ -22,10 +22,10 @@ public class Subdirectories {
 
     public static void main(String[] args) {
         String pathToDirectory = "C:\\Users";
-        File directoryPath = new File(pathToDirectory);
-        
-        File[] subdirectoriesLambda = getSubdirectoriesLambda(directoryPath);
-        File[] subdirectoriesMethodReference = getSubdirectoriesMethodReference(directoryPath);
+        File directory = new File(pathToDirectory);
+
+        File[] subdirectoriesLambda = getSubdirectoriesLambda(directory);
+        File[] subdirectoriesMethodReference = getSubdirectoriesMethodReference(directory);
 
         System.out.println("Subdirectories (Lambda)" + Arrays.toString(subdirectoriesLambda));
         System.out.println("Subdirectories (Method reference)" + Arrays.toString(subdirectoriesMethodReference));
